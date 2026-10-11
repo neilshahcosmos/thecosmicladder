@@ -1,4 +1,4 @@
-# Astro Starter Kit: Blog
+# The Cosmic Ladder
 
 ```sh
 npm create astro@latest -- --template blog
