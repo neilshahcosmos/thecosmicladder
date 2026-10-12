@@ -2,11 +2,14 @@
 home: true
 layout: Blog
 icon: house
-title: Blog Home
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: The name of your blog
-tagline: You can put your slogan here
+title: The Cosmic Ladder
+heroImage: /ladder.svg
+heroText: The Cosmic Ladder
+tagline: 
 heroFullScreen: true
+bgimage: /nebula.jpg
+bgImageDark: /nebula.jpg
+
 projects:
   - icon: folder-open
     name: project name
@@ -38,11 +41,6 @@ projects:
     desc: Detailed description of this custom item
     link: https://link.to.your.friend
 
-footer: customize your footer text
+footer: Thank you so much for visiting!
 ---
 
-This is a blog home page demo.
-
-To use this layout, you should set both `layout: Blog` and `home: true` in the page front matter.
-
-For related configuration docs, please see [blog homepage](https://theme-hope.vuejs.press/guide/blog/home.html).

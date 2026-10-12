@@ -1,0 +1,24 @@
+
+/* MathJax SVG output. Nuxt Content renders <mjx-container> as <mjxcontainer>,
+   so these rules use the class instead of the tag name. */
+.MathJax {
+  direction: ltr;
+}
+
+/* Tailwind sets svg { display: block }; restore inline behavior for inline math */
+.MathJax > svg {
+  display: inline-block;
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+/* Display math: its own centered block */
+.MathJax[display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

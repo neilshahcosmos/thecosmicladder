@@ -1,21 +1,17 @@
 {
   "name": "thecosmicladder",
-  "description": "A project of vuepress-theme-hope",
-  "version": "2.0.0",
-  "license": "MIT",
-  "type": "module",
   "scripts": {
-    "docs:build": "vuepress-vite build src",
-    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
-    "docs:dev": "vuepress-vite dev src",
-    "docs:update-package": "npx vp-update"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate"
   },
-  "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.31",
-    "katex": "^0.19.0",
-    "sass-embedded": "^1.105.0",
-    "vue": "^3.5.43",
-    "vuepress": "2.0.0-rc.31",
-    "vuepress-theme-hope": "2.0.0-rc.110"
-  }
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "docus": "latest",
+    "katex": "^0.17.0",
+    "nuxt": "^4.4.8",
+    "rehype-mathjax": "^7.1.0",
+    "remark-math": "^6.0.0"
+  },
+  "type": "module"
 }
