@@ -1,0 +1,52 @@
+body { counter-reset: thm; }
+
+@theme {
+  /* Primary: cosmic purple */
+  --color-purple-50:  #f5f0ff;
+  --color-purple-100: #ece3ff;
+  --color-purple-200: #dac9ff;
+  --color-purple-300: #c2a3ff;
+  --color-purple-400: #a876ff;
+  --color-purple-500: #8f4bf5;
+  --color-purple-600: #7b2fe0;
+  --color-purple-700: #6522bf;
+  --color-purple-800: #531e9c;
+  --color-purple-900: #451d7d;
+  --color-purple-950: #2a0d54;
+
+  /* Neutral: slate re-tinted toward deep indigo */
+  --color-slate-50:  #f8f7fc;
+  --color-slate-100: #f0eef8;
+  --color-slate-200: #e1deef;
+  --color-slate-300: #cbc7e0;
+  --color-slate-400: #9e99bf;
+  --color-slate-500: #75709a;
+  --color-slate-600: #5a5580;
+  --color-slate-700: #47436a;
+  --color-slate-800: #2a2748;
+  --color-slate-900: #15122e;
+  --color-slate-950: #0b0a1d;
+}
+
+.thm {
+  --thm-color: var(--ui-primary, #7c5cff);
+  counter-increment: thm;
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.1rem;
+  border-left: 4px solid var(--thm-color);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--thm-color) 8%, transparent);
+}
+.thm--definition { --thm-color: #0ea5e9; }
+.thm--lemma, .thm--proposition, .thm--corollary { --thm-color: #8b5cf6; }
+.thm--remark, .thm--example { --thm-color: #64748b; }
+
+.thm__head { margin: 0 0 0.4rem; font-weight: 400; }
+.thm__label::after { content: " " counter(thm); }
+.thm__title { margin-left: 0.4em; font-weight: 700; }
+.thm__body > :first-child { margin-top: 0; }
+.thm__body > :last-child { margin-bottom: 0; }
+
+.proof { position: relative; margin: 1rem 0 1.5rem; padding-right: 1.5rem; }
+.proof::after { content: "∎"; position: absolute; right: 0; bottom: 0.1rem; }
+.proof__head { margin: 0 0 0.3rem; }
