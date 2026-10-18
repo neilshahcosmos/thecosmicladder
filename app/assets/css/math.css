@@ -7,6 +7,8 @@
 
 /* Tailwind sets svg { display: block }; restore inline behavior for inline math */
 .MathJax > svg {
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
   display: inline-block;
   overflow: visible;
   min-height: 1px;

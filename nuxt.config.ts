@@ -12,6 +12,7 @@ export default defineNuxtConfig({
         rehypePlugins: {
           'rehype-mathjax': {
             options: {
+              svg: { scale: 1.2 },
               tex: {
                 tags: 'ams',
                 macros: {
